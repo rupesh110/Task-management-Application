@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import TextPointer from '../textPointer/TextPointer';
-import Text from '../text/Text';
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
 
 function Navbar({ title, services }) {
