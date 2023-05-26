@@ -2,15 +2,17 @@
 
 button{
     width: auto;
-    height: 7vh;
+    height: auto;;
     background-color: #345392;
     color: white;
     padding: 0 2rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 6px;
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
     margin: 10px;
+    padding: 6px;
+
 }
 button:hover{
     background-color: #2e6db3;

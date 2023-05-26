@@ -15,31 +15,53 @@ code {
 .welcomeScreenContainer{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 200vh;
 }
 
 .navBarContainer{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 20vh;
+    height: 10vh;
     background-color: #282c34;
     color: white;
     padding: 0 2rem;
 }
 
+.navbarUpperContainer{
+    position: fixed;
+    width: 100%;
+}
+
 .logo{
-    height: 13vh;
+    height: 8vh;
     pointer-events: none;
+}
+.navbarLeft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #282c34;
+    color: white;
+    padding: 0 2rem;
+}
+
+.navbarMiddle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282c34;
+    color: white;
+    padding: 0 2rem;
 }
 
 .navbarRight{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 20vw;
+    margin-right: 70px;
 }
 
 .mainPageContainer{
@@ -52,13 +74,24 @@ code {
     color: white;
     padding: 0 2rem;
 }
-.footerContainer{
+
+
+
+.navbarMiddle{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    margin-left: 20px;
     height: 10vh;
     background-color: #282c34;
     color: white;
     padding: 0 2rem;
 }
+
+.dropDown{
+    float: left;
+    overflow: visible;
+    margin: 7px;
+}
+
+
