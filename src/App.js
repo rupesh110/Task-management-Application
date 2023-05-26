@@ -11,13 +11,12 @@ function App() {
   return (
     <div className="App">
       <WelcomeScreen />
-      {/* <TextPointer
-        text="This is a text pointer"
-      /> */}
 
       <Card
         title="About Us"
       />
+
+      
     
    
   
