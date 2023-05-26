@@ -12,10 +12,6 @@ function App() {
     <div className="App">
       <WelcomeScreen />
 
-      <Card
-        title="About Us"
-      />
-
       
     
    
