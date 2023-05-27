@@ -1,3 +1,9 @@
 [submodule "Task-management-Application"]
   path = submodules/task-management
   url = https://github.com/rupesh110/Task-management-Application.git
+[submodule "submodules/task-management"]
+	path = submodules/task-management
+	url = https://github.com/rupesh110/Task-management-Application.git
+[submodule "submodules/new-name"]
+	path = submodules/new-name
+	url = https://github.com/rupesh110/Task-management-Application.git
