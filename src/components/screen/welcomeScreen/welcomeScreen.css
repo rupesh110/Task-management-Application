@@ -15,7 +15,7 @@ code {
 .welcomeScreenContainer{
     display: flex;
     flex-direction: column;
-    height: 200vh;
+
 }
 
 .navBarContainer{
@@ -92,6 +92,11 @@ code {
     float: left;
     overflow: visible;
     margin: 7px;
+}
+
+.dropDown:hover{
+    cursor: pointer;
+    color: #0854ec;
 }
 
 

@@ -1,9 +1,12 @@
 import React from "react";
-import TextInput from "../../../component/textInput/TextInput";
-import Button from "../../../component/button/Button";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 
 import "./footer.css"
+import TextInput from "../../../component/textInput/TextInput";
+import Button from "../../../component/button/Button";
+import CardFooter from "../../../component/card/CardFooter";
 import TextPointer from "../../../component/textPointer/TextPointer";
+import Text from "../../../component/text/Text";
 
 export default function Footer() {
 
@@ -41,12 +44,55 @@ export default function Footer() {
         />
         </div>
       <hr />
-      <div>
-        <TextPointer
-          text= "About Synergic"
+      <div className="footerCard">
+        <CardFooter
+          link={"https://www.google.com/"}
+          title="About us"
+          text="What's behind the boards"
+        />
+        
+        <CardFooter 
+          link={"https://www.google.com/"}
+          title="Contact us"
+          text="We are here to help"
         />
       </div>
-
+      <hr />
+      <div className="footerBottomContainer">
+        <div className="footerBottomText">
+          <div className="footerText">
+            <a href="https://www.google.com/" style={{ textDecoration: "none", color: "white" }}>
+              <TextPointer
+                text="Privacy Policys"
+                fontSize="12"
+              />
+            </a>
+          </div>
+          <div className="footerText">
+            <TextPointer
+              text="Terms"
+              fontSize="12"
+            />
+          </div>
+          <div className="footerText">
+            <TextPointer
+              text="Cookie Settings"
+              fontSize="12"
+            />
+          </div>
+            <Text
+              text="© 2021 Synergic. All rights reserved."
+              fontSize="12"
+            />
+        </div>
+        <div className="footerBottomLogo">
+          <FaFacebook className="Icon" />
+          <FaInstagram className="Icon" />
+          <FaLinkedin className="Icon" />
+          <FaTwitter className="Icon" />
+          <FaYoutube className="Icon" />
+        </div>
+      </div>
     </div>
     
   );

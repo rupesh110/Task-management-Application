@@ -4,7 +4,7 @@ import "./textPointer.css";
 export default function TextPointer({ text, fontSize = "20", color, onClick, icon }) {
     const textStyle = {
         fontSize: `${fontSize}px`,
-        color: color,
+        color: `${color}`,
     };
 
     return (
