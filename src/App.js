@@ -8,8 +8,8 @@ import HomePageScreen from './components/screen/homePage/HomePageScreen';
 function App() {
   return (
     <div className="App">
-      {/* <WelcomeScreen /> */}
-        <HomePageScreen />
+      <WelcomeScreen />
+        {/* <HomePageScreen /> */}
     
    
   
