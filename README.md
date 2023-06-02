@@ -1,3 +1,8 @@
+#Project Details
+
+This is a learning project to make users be able to chat and send images to their friends. This is still in a inital phas
+
+
 <<<<<<< HEAD
 # Getting Started with Create React App
 
