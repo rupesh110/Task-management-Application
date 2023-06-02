@@ -1,36 +1,60 @@
-.cardMessageContainer {
+.cardContainer {
   display: flex;
   flex-direction: column;
   border-radius: 6px;
+  width: 100%;
+}
+
+.cardMessageContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 100%;
-
   padding: 10px;
+  margin-top: 40px; /* Add margin to push content below the fixed cardMessageDisplay */
+  overflow-y: auto; /* Enable scrolling */
+  max-height: calc(100vh - 40px); /* Set maximum height to fill the remaining viewport height */
+}
 
+.cardMessageDisplay {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: blueviolet;
+  padding: 10px;
 }
 
 .displayText {
   font-size: 18px;
   margin: 0;
-  padding: 10px;
+  padding: 7px;
   border-radius: 10px;
   margin-bottom: 10px;
   min-width: auto;
-  max-width: 70%; /* Set maximum width to 50% of the container */
+  max-width: 100%; /* Set maximum width to 70% of the container */
   word-wrap: break-word;
 }
+
+.navUsers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+}
+
 .left {
   background-color: aqua;
   border: 1px solid #060807;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: flex-start;
   align-self: flex-start;
   word-wrap: break-word; /* Add word-wrap property */
   min-width: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
 }
 
 .right {
@@ -40,10 +64,29 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
-  align-self: flex-end;/* Set maximum width to 50% of the container */
+  align-self: flex-end;
+  max-width: 70%; /* Set maximum width to 70% of the container */
   word-wrap: break-word; /* Add word-wrap property */
   min-width: auto;
   margin-right: 15px;
-  ;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.imageContainer {
+  max-width: 100%; /* Adjust the maximum width as per your preference */
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer img {
+  max-width: 100%; /* Set the maximum width to 100% of the container */
+  max-height: 100%; /* Set the maximum height to 100% of the container */
+  object-fit: contain; /* Use object-fit: contain to maintain aspect ratio and fit the image within the container */
+  border-radius: 10px;
 }
 

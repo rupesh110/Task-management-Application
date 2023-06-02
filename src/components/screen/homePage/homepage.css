@@ -2,7 +2,13 @@
   display: flex;
   flex-direction: row;
   background-color: rgb(204, 107, 55);
-  height: auto;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .homePageContainer {
+    flex-direction: column;
+  }
 }
 
 .displayContainer {
@@ -15,7 +21,7 @@
   margin: 0 auto;
   padding: 10px;
   min-width: 60%;
-  height: auto;
+  height: 100%;
 }
 
 .usersContainer {
@@ -28,9 +34,10 @@
   margin: 0 auto;
   padding: 10px;
   min-width: 20%;
-  height: auto;
+  height: 100%;
 }
-.randomContainer{
+
+.randomContainer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -40,17 +47,7 @@
   margin: 0 auto;
   padding: 10px;
   min-width: 20%;
-  height: auto;
-}
-
-.messageStyle {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  background-color: aqua;
-  border: 2px solid #130808;
-  margin-bottom: 10px;
-  padding: 10px;
+  height: 100%;
 }
 
 .displayMessage {
@@ -58,10 +55,9 @@
   width: 90%;
   background-color: rgb(223, 230, 230);
   border: 2px solid #130808;
-  overflow-y: scroll;
   overflow-x: hidden;
   padding: 10px;
-  max-height: 40%;
+  max-height: 60vh;
 }
 
 .writeContent {
@@ -82,6 +78,12 @@
   resize: vertical;
   border-radius: 8px;
   border: 2px solid #130808;
+}
+
+@media (max-width: 768px) {
+  .textAreaStyle {
+    width: 90%;
+  }
 }
 
 .sendIcon {
