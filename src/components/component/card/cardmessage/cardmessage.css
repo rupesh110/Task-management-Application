@@ -1,0 +1,49 @@
+.cardMessageContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  padding: 10px;
+
+}
+
+.displayText {
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  min-width: auto;
+  max-width: 70%; /* Set maximum width to 50% of the container */
+  word-wrap: break-word;
+}
+.left {
+  background-color: aqua;
+  border: 1px solid #060807;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  align-self: flex-start;
+  word-wrap: break-word; /* Add word-wrap property */
+  min-width: auto;
+}
+
+.right {
+  background-color: lightblue;
+  border: 1px solid #060807;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-self: flex-end;/* Set maximum width to 50% of the container */
+  word-wrap: break-word; /* Add word-wrap property */
+  min-width: auto;
+  margin-right: 15px;
+  ;
+}
+
