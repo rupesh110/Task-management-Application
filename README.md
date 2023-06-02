@@ -1,9 +1,11 @@
-#Project Details
 
-This is a learning project to make users be able to chat and send images to their friends. This is still in a inital phas
 
 
 <<<<<<< HEAD
+
+**Project Details**
+
+This is a learning project to make users be able to chat and send images to their friends. This is still in a inital phas
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
