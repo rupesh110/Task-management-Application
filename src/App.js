@@ -22,9 +22,7 @@ function App() {
 
 
       <DataProvider>
- 
-   <HomePageScreen />
-
+        <HomePageScreen />
       </DataProvider>
 
     </div>

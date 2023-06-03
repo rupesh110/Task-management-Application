@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { MdAccountCircle } from 'react-icons/md';
 import { FiSend } from 'react-icons/fi';
 
@@ -7,14 +7,17 @@ import Button from '../../component/button/Button';
 import CardMessage from '../../component/card/cardmessage/CardMessage';
 import CardUsers from '../../component/card/cardusers/CardUsers';
 import users from '../../../data/UserData';
+import { DataContext } from '../../../data/DataContext';
+
 
 export default function HomePageScreen() {
-  const [messages, setMessages] = useState(["message1", "message2", "message3", "message4", "message5"]);
+  const {messages, setMessages} = useContext(DataContext);
   const [text, setText] = useState('');
   const [selectedFile, setSelectedFile] = useState(null);
   const [user, setUser] = useState(users);
   
   const handleSend = () => {
+
     if (text.trim() !== '' || selectedFile) {
       const newMessage = [];
       if (text.trim() !== '') {
